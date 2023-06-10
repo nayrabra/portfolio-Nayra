@@ -64,9 +64,17 @@ body {
     color:var(--cor-terciaria);
 }
 
+li {
+    list-style-type: none;
+  }
+
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo__texto__descricao{
+    font-size: 18px;
 }
 
 .apresentacao__links {
@@ -147,7 +155,7 @@ body {
 }
 
 .imagem-projeto {
-    width: 120%; /* Alteração: define uma largura máxima de 100% */
+    width: 100%; /* Alteração: define uma largura máxima de 100% */
     height: auto; /* Adição: mantém a proporção da imagem */
     padding: 2rem;
     border-radius: 8px;
