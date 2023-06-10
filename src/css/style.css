@@ -155,7 +155,8 @@ body {
 }
 
 .imagem-projeto:hover {
-    transform: scale(1.2); /* Aumenta a escala da imagem para 1.2 quando o mouse é passado por cima */
+    transform: scale(1.1); /* Aumenta a escala da imagem para 1.1 quando o mouse é passado por cima */
+    opacity: 0.8;
   }
 
 .imagem-projeto img {
