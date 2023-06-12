@@ -155,7 +155,7 @@ li {
 }
 
 .imagem-projeto {
-    width: 120%; /* Alteração: define uma largura máxima de 120% */
+    width: 130%; /* Alteração: define uma largura máxima de 120% */
     height: auto; /* Adição: mantém a proporção da imagem */
     padding: 2rem;
     display:flex;
@@ -223,7 +223,7 @@ li {
     }
 
     .imagem-projeto img{
-        width: 120%;
+        width: 170%;
     }
 
     .cabecalho__toggle {
@@ -285,7 +285,7 @@ li {
     }
 
     .imagem-projeto img{
-        width: 120%;
+        width: 170%;
     }
 
     .cabecalho__toggle {
@@ -347,7 +347,7 @@ li {
     }
 
     .imagem-projeto img{
-        width: 120%;
+        width: 150%;
     }
 }
 
