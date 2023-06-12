@@ -9,31 +9,37 @@
 </head>
 <body>
    <header class="cabecalho">
-        <nav class="cabecalho__menu"> 
+        <nav class="cabecalho__menu cabecalho__conteudo"> 
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
             <a class="cabecalho__menu__link" href="curriculum.html"> Currículo </a>
             <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
         </nav>
+
+        <div class="cabecalho__toggle" onclick="toggleMenu()">
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+        </div>
    </header>
     <main class="apresentacao__projeto">
         <section class="apresentacao__projeto_conteudo">
             <h1 class="apresentacao__conteudo__titulo">
                 Principais <strong class="titulo-destaque">Projetos</strong>
             </h1>
-            <p class="apresentacao__conteudo__texto">Realizei o desenvolvimento dos projetos utilizando <strong class="titulo-destaque">HTML, CSS e JavaScript:</strong></p>
-            <div class="apresentacao__projeto_links">
+            <p class="apresentacao__conteudo__texto">Projetos desenvolvidos utilizando: <strong class="titulo-destaque">HTML, CSS e JavaScript:</strong></p>
+            <div class="imagem-projeto_links">
                 <a class="imagem-projeto" href="https://cloudgirls.com.br/turma8/mentees.html" target="_blank">
-                    <img src="assets/cloud-girls.png">
+                    <img src="assets/cloud-girls.png" alt="Imagem do projeto Cloud Girls">
                 </a>
                 <a class="imagem-projeto" href="https://nayrabra.github.io/projeto-mario/" target="_blank">
-                    <img src="assets/super-mario.png">
+                    <img src="assets/super-mario.png" alt="Imagem do projeto Super Mario">
                 </a>
-                <a class="imagem-projeto" alt="Imagem do projeto Alura Plus" href="https://aluraplus-flax-kappa.vercel.app/" target="_blank">
-                    <img src="assets/alura-plus.png">
+                <a class="imagem-projeto" href="https://aluraplus-flax-kappa.vercel.app/" target="_blank">
+                    <img src="assets/alura-plus.png" alt="Imagem do projeto Alura Plus">
                 </a>
-                <a class="imagem-projeto" alt="Imagem do sistema Seja Elegante" href="https://sistema-seja-elegante.vercel.app/" target="_blank">
-                    <img src="assets/cadastro-estoque.png">
+                <a class="imagem-projeto" href="https://sistema-seja-elegante.vercel.app/" target="_blank">
+                    <img src="assets/cadastro-estoque.png" alt="Imagem do projeto Seja Elegante">
                 </a>
             </div>
         </section>
@@ -41,5 +47,12 @@
     <footer class="rodape">
         <p>Desenvolvido por Nayra.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+        var cabecalhoConteudo = document.querySelector('.cabecalho__conteudo');
+        cabecalhoConteudo.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>

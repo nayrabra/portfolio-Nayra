@@ -9,12 +9,18 @@
 </head>
 <body>
    <header class="cabecalho">
-        <nav class="cabecalho__menu"> 
+        <nav class="cabecalho__menu cabecalho__conteudo"> 
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
             <a class="cabecalho__menu__link" href="curriculum.html"> Currículo </a>
             <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
         </nav>
+
+        <div class="cabecalho__toggle" onclick="toggleMenu()">
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+        </div>
    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -22,24 +28,20 @@
                 Objetivo <strong class="titulo-destaque">Profissional</strong>
             </h1>
             <section class="apresentacao__conteudo__texto">
-                <p class="apresentacao__conteudo__texto__descricao">Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na faculdade e tenho um objetivo claro: me tornar uma profissional especializada em Front-end. No entanto, estou sempre aberta a novas possibilidades e desafios que possam surgir em meu caminho.
+                <p class="apresentacao__conteudo__texto">Atualmente, estou cursando <strong class="titulo-destaque">Análise e Desenvolvimento de Sistemas</strong> e tenho como objetivo me tornar uma profissional especializada em <strong class="titulo-destaque">Front-end</strong>. No entanto, estou sempre aberta a novas possibilidades e desafios que possam surgir em meu caminho.
                     <br><br>
-                    Tenho conhecimento principalmente em:
-            </section>
-            <ul class="apresentacao__conteudo__texto">
-                <li class="apresentacao__conteudo__texto__descricao">HTML</li>
-                <li class="apresentacao__conteudo__texto__descricao">CSS</li>
-                <li class="apresentacao__conteudo__texto__descricao">JavaScript</li>
-                <li class="apresentacao__conteudo__texto__descricao">Java</li>
-                <li class="apresentacao__conteudo__texto__descricao">Python</li>
-                <li class="apresentacao__conteudo__texto__descricao">Git</li>
-                <li class="apresentacao__conteudo__texto__descricao">GitHub</li>
-                </ul>
-            </p>
-        </section>
+                <p>Tenho conhecimento principalmente em: <strong class="titulo-destaque"> HTML, CSS, JavaScript</strong> e noções báscias em <strong class="titulo-destaque">React</strong>.</p>
+            
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Nayra.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+        var cabecalhoConteudo = document.querySelector('.cabecalho__conteudo');
+        cabecalhoConteudo.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>

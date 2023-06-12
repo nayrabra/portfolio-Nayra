@@ -11,17 +11,23 @@
 
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__menu"> 
+        <nav class="cabecalho__menu cabecalho__conteudo"> 
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
             <a class="cabecalho__menu__link" href="curriculum.html"> Currículo </a>
             <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
         </nav>
+
+        <div class="cabecalho__toggle" onclick="toggleMenu()">
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+            <div class="cabecalho__toggle__barra"></div>
+        </div>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Nayra Barbosa, estudante de tecnologia, apaixonada pela área e que procura estar em constante evolução.</p>
+            <p class="apresentacao__conteudo__texto">Olá! Sou Nayra Barbosa, estudante de tecnologia, apaixonada pela área e estou em constante aprendizagem.</p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
                 <a class= "apresentacao__links_botoes" href="https://www.linkedin.com/in/nayra-barbosa/" target="_blank">
@@ -39,5 +45,12 @@
     <footer class="rodape">
         <p>Desenvolvido por Nayra.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+        var cabecalhoConteudo = document.querySelector('.cabecalho__conteudo');
+        cabecalhoConteudo.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
